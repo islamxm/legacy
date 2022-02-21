@@ -1,0 +1,33 @@
+.button {
+    background-color: #B3966F;
+    color: #f9f9f9;
+    @include def-anim;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: #C7AC87;
+    }
+}
+
+.button-l {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 25px 53px;   
+}
+
+.button-m {
+    padding: 14px 43px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.button-s {
+    padding: 10px 35px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}

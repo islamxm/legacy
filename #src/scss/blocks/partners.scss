@@ -1,0 +1,38 @@
+.partners {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__body {
+        // overflow: visible;
+        &_wr {
+            align-items: center;
+
+        }
+
+        &_sl {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .partners {
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__in {
+            padding-top: 20px;
+        }
+    }
+}

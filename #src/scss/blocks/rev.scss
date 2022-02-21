@@ -1,0 +1,150 @@
+.rev {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__title {
+        margin-bottom: 78px;
+    }
+
+    &__body {
+        padding-bottom: 60px;
+        &_wr {
+
+        }
+
+        &_sl.swiper-slide-active {
+            opacity: 1;
+        }
+
+        &_sl {
+            @include def-anim;
+            padding-top: 20px;
+            opacity: 0.5;
+            box-shadow: 4px 13px 19px rgba(62, 55, 55, 0.07);
+            .body {
+                padding: 60px 25px 8px 25px;
+                font-size: 16px;
+                line-height: 19px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                    content: url('../img/icons/rev-icon.svg');
+                }
+            }
+
+            .action {
+                background: #B3966F;
+                padding: 15px 25px;
+
+                &__head {
+                    margin-bottom: 15px;
+                    display: flex;
+                    &_icon {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #F9A825;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        margin-right: 11px;
+                    }
+
+                    &_descr {
+
+                        &_name {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #fff;
+                        }
+
+                        &_date {
+                            
+
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &__stars {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 40px;
+                    
+                    .star {
+                        margin: 0 5px;
+                        display: block;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+
+    .rev {
+
+        &__in {
+            padding: 30px 0;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__body {
+            overflow: hidden;
+
+            &_wr {
+
+            }
+
+            &_sl {
+                .body {
+                    padding: 41px 15px 17px 15px;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    &:after {
+                        height: 31px;
+                        width: 34px;
+                        content: '';
+                        background-image: url('../img/icons/rev-icon.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        left: 15px;
+                    }
+                }
+
+                .action {
+                    padding: 15px;
+                }
+
+                &:last-child {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

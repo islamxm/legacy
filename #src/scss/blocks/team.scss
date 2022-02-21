@@ -1,0 +1,136 @@
+.team {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }   
+
+    &__text {
+        margin-bottom: 80px;
+    }
+
+    &__body {
+
+        &_wr {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 70px;
+            grid-row-gap: 50px;
+        }
+
+        .pag {
+            display: none;
+        }
+        
+
+        &_item {
+            
+            height: 400px;
+            background-color: #fff;
+            box-shadow: 4px 13px 19px rgba(62, 55, 55, 0.07);
+            
+
+            
+
+            &_img {
+                height: 271px;
+
+                img {
+                    width: 100%;    
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &_descr {
+                padding: 11px 19px;
+                
+                
+                .name {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 10px;
+                    color: #B3966F;
+                }
+
+                .pos {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .team {
+
+        &__in {
+
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            margin-bottom: 69px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__body {
+            padding-bottom: 60px;
+
+            .pag {
+                display: flex;
+            }
+
+            &_wr {  
+                display: flex;
+                grid-gap: unset;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .team {
+
+        &__body {
+
+            &_item {
+
+                &_img {
+                    height: 300px;
+                }
+
+                &_descr {
+                    padding: 12px 9px;
+
+                    .name {
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-bottom: 12px;
+                    }
+
+                    .pos {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+
+            .pag {
+
+                
+            }
+        }
+    }
+}

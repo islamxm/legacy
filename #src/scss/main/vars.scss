@@ -1,0 +1,9 @@
+//COLORS
+
+:root {
+    --text_cl2: #292929;
+}
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

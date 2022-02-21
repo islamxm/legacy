@@ -1,0 +1,231 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(41, 41, 41, 0.64);
+
+    &__in {
+        padding: 20px 0;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 25px;
+
+        &_links {
+            display: flex;
+            align-items: center;
+
+            &_item {
+                display: inline-block;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #fff;
+                position: relative;
+                padding-left: 20px;
+
+                &:nth-child(1) {
+
+                    
+                }
+
+                
+            }
+
+            &_item.tel {
+                &:before {
+                    position: absolute;
+                    content: url('../img/icons/tel.svg');
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            &_item.email {
+                &:before {
+                    position: absolute;
+                    content: url('../img/icons/email.svg');
+                    top: 0;
+                    left: 0;
+                } 
+            }
+
+            .spacer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 15px;
+            }
+        }
+
+        &_soc {
+            display: flex;
+            align-items: center;
+            &_item {
+                display: block;
+
+                margin-left: 10px;
+
+                &:first-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_logo {
+            display: block;
+        }
+
+        &_nav {
+
+            &_list {
+                display: flex;
+                align-items: center;
+
+                &_item.active {
+                    a {
+                        font-weight: 700;
+                    }
+                }
+
+                &_item {
+                    margin-left: 46px;
+
+                    &:first-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        display: block;
+                        color: #F9F9F9;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 24px;
+                        @include def-anim;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__mob {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .header {
+
+        &__in {
+            padding: 15px 0;
+        }
+
+        &__top {
+            display: none;
+        }
+
+        &__main {
+            display: none;
+        }
+
+        &__mob {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            &_start {
+                display: flex;
+                align-items: center;
+                
+            }
+
+            &_logo {
+                display: block;
+                margin-right: 40px;
+            }
+
+            &_soc {
+                display: flex;
+                align-items: center;
+                
+                &_item {
+                    margin-right: 10px;
+                    display: block;
+                }
+            }
+
+            &_burger {  
+                width: 40px;
+                height: 27px;
+                position: relative;
+
+                span {
+                    height: 4px;
+                    width: 100%;
+                    display: block;
+                    background-color: #fff;
+
+                    &:nth-child(1) {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        top: calc(50% - 2px);
+                        left: 0;
+                    }
+
+                    &:nth-child(3) {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+
+        &__in {
+            padding: 9px 0;
+        }
+
+        &__mob {
+
+            &_logo {
+                margin-right: 20px;
+            }
+            &_soc {
+
+                &_item {
+                    
+                }
+            }
+        }
+    }
+}
