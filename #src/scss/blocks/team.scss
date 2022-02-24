@@ -143,3 +143,19 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+
+    .team {
+
+        &__body {
+
+            &_item {
+                max-height: 328px;
+                &_img {
+                    max-height: 210px;
+                }
+            }
+        }
+    }
+}
