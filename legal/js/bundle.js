@@ -6,7 +6,7 @@
 /*!*******************************************!*\
   !*** ./#src/js/modules/partnersSlider.js ***!
   \*******************************************/
-/*! exports provided: partnersSlider */function(e,t,s){"use strict";s.r(t),s.d(t,"partnersSlider",(function(){return r}));var n=s(/*! swiper */"./node_modules/swiper/swiper.esm.js");const r=()=>{new n.default(".partners__body",{slidesPerView:1,spaceBetween:10,breakpoints:{1050:{slidesPerView:4,spaceBetween:80},800:{slidesPerView:3,spaceBetween:30},500:{slidesPerView:2,spaceBetween:30}}})}},"./#src/js/modules/revSlider.js":
+/*! exports provided: partnersSlider */function(e,t,s){"use strict";s.r(t),s.d(t,"partnersSlider",(function(){return r}));var n=s(/*! swiper */"./node_modules/swiper/swiper.esm.js");const r=()=>{new n.default(".partners__body",{slidesPerView:2,spaceBetween:10,autoplay:{delay:5e3},breakpoints:{1050:{slidesPerView:4,spaceBetween:80,autoplay:{delay:5e3}},800:{slidesPerView:3,spaceBetween:30,autoplay:{delay:5e3}},500:{slidesPerView:2,spaceBetween:30,autoplay:{delay:5e3}}}})}},"./#src/js/modules/revSlider.js":
 /*!**************************************!*\
   !*** ./#src/js/modules/revSlider.js ***!
   \**************************************/

@@ -5,7 +5,7 @@
         z-index: 3;
     }
     &__in {
-        top: -300px;
+        top: -356px;
         position: absolute;
         left: 0;
         width: 100%;
@@ -134,15 +134,37 @@
     }
 }
 
+@media (max-width: 1050px) {
+
+
+    .serv {
+
+        &__in {
+            top: -250px;
+        }
+    }
+}
+
 @media (max-width: 700px) {
 
     .serv {
 
+
+        &__in {
+            // padding: 0;
+
+        }
+        .container {
+            
+        }
+       
         &__descr {
             margin-bottom: 40px;
         }
 
         &__body {
+            overflow: visible;
+            padding-right: 50px;
 
             &_sl {
                 height: 322px;

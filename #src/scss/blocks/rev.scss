@@ -148,3 +148,15 @@
         }
     }
 }
+
+
+@media (max-width: 700px) {
+
+    .rev {
+
+        &__body {
+            padding-right: 40px;
+            overflow: visible;
+        }
+    }
+}

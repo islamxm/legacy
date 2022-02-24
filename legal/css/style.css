@@ -465,7 +465,7 @@ body {
   left: 0;
 }
 .hero__in {
-  padding-top: 200px;
+  padding-top: 281px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,7 +475,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
   position: relative;
   z-index: 2;
   padding-bottom: 463px;
@@ -515,8 +514,8 @@ body {
 }
 @media (max-width: 1050px) {
   .hero__in {
-    padding-top: 120px;
-    padding-bottom: 350px;
+    padding-top: 124px;
+    padding-bottom: 336px;
   }
   .hero__body_title {
     font-size: 20px;
@@ -527,6 +526,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 30px;
+  }
+  .hero__body_descr span {
+    font-weight: 700;
+    font-style: italic;
   }
   .hero__body_btn button {
     padding: 13px 22px;
@@ -554,7 +557,7 @@ body {
   z-index: 3;
 }
 .serv__in {
-  top: -300px;
+  top: -356px;
   position: absolute;
   left: 0;
   width: 100%;
@@ -645,9 +648,18 @@ body {
     line-height: 19px;
   }
 }
+@media (max-width: 1050px) {
+  .serv__in {
+    top: -250px;
+  }
+}
 @media (max-width: 700px) {
   .serv__descr {
     margin-bottom: 40px;
+  }
+  .serv__body {
+    overflow: visible;
+    padding-right: 50px;
   }
   .serv__body_sl {
     height: 322px;
@@ -744,7 +756,7 @@ body {
 }
 @media (max-width: 700px) {
   .ind__in {
-    padding-top: 270px;
+    padding-top: 320px;
     padding-bottom: 20px;
   }
   .ind__title {
@@ -1025,6 +1037,16 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .team__text {
+    margin-bottom: 35px;
+  }
+  .team__in {
+    padding-bottom: 20px;
+  }
+  .team__body {
+    padding-right: 40px;
+    overflow: visible;
+  }
   .team__body_item_img {
     height: 300px;
   }
@@ -1163,6 +1185,12 @@ body {
     opacity: 1;
   }
 }
+@media (max-width: 700px) {
+  .rev__body {
+    padding-right: 40px;
+    overflow: visible;
+  }
+}
 .partners__in {
   padding: 50px 0;
 }
@@ -1192,6 +1220,24 @@ body {
   }
   .partners__in {
     padding-top: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .partners__in {
+    padding-bottom: 30px;
+  }
+  .partners__title {
+    margin-bottom: 15px;
+  }
+  .partners__body {
+    padding-right: 70px;
+    overflow: visible;
+  }
+  .partners__body_sl img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .footer {
