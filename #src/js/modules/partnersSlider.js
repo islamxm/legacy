@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper, {Autoplay} from 'swiper';
 
 export const partnersSlider = () => {
 
@@ -8,6 +8,7 @@ export const partnersSlider = () => {
         autoplay: {
             delay: 5000
         },
+        modules: [Autoplay],
         breakpoints: {
             1050: {
                 slidesPerView: 4,
