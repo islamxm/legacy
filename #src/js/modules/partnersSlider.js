@@ -3,7 +3,7 @@ import Swiper, {Autoplay} from 'swiper';
 export const partnersSlider = () => {
 
     const sl = new Swiper('.partners__body', {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10,
         autoplay: {
             delay: 5000

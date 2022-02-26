@@ -22,12 +22,18 @@
 
             &_item {
                 display: inline-block;
-                font-weight: 300;
+                font-weight: 500;
                 font-size: 14px;
                 line-height: 17px;
+                opacity: .5;
                 color: #fff;
                 position: relative;
                 padding-left: 20px;
+                @include def-anim;
+
+                &:hover {
+                    opacity: 1;
+                }
 
                 &:nth-child(1) {
 
@@ -95,12 +101,19 @@
 
                 &_item.active {
                     a {
-                        font-weight: 700;
+                        opacity: 1;
                     }
                 }
 
                 &_item {
                     margin-left: 46px;
+                    @include def-anim;
+                    
+
+                    &:hover {
+
+
+                    }
 
                     &:first-child {
                         margin: 0;
@@ -112,10 +125,13 @@
                         font-weight: 300;
                         font-size: 20px;
                         line-height: 24px;
+                        font-weight: 600;
+                        opacity: .5;
                         @include def-anim;
 
                         &:hover {
                             color: #fff;
+                            opacity: 1;
                         }
                     }
                 }

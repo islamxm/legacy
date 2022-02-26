@@ -1,4 +1,5 @@
 import { mobmenu } from "./modules/mobmenu";
+import { nav } from "./modules/nav";
 import { partnersSlider } from "./modules/partnersSlider";
 import { revSlider } from "./modules/revSlider";
 import { servSlider } from "./modules/servSlider";
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     partnersSlider();
     teamSlider();
     mobmenu();
+    nav();
 
 })
 

@@ -16,6 +16,8 @@
         margin: 0 17.5px;
         @include def-anim;
         cursor: pointer;
+        display: block;
+        flex: 0 0 auto;
     }
 
     &__item_active {
@@ -39,6 +41,7 @@
             width: 17px;
             height: 17px;
             margin: 0 15;
+            flex: 0 0 auto;
         }
 
         &__item_active {
@@ -58,19 +61,20 @@
     .pag {
 
         &__item {
-            width: 12px;
-            height: 12px;
+            width: 12px !important;
+            height: 12px !important;
             margin: 0 5px;
+            flex: 0 0 auto;
         }
 
         &__item_active {
-            width: 17px;
-            height: 17px;
+            width: 17px !important;
+            height: 17px !important;
         }
 
         &__item_current {
-            width: 17px;
-            height: 17px;
+            width: 17px !important;
+            height: 17px !important;
         }
     }
 }

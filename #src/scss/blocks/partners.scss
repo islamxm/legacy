@@ -62,3 +62,16 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+
+    .partners {
+
+        &__body {
+
+            &_sl {
+                justify-content: flex-start;
+            }
+        }
+    }
+}
